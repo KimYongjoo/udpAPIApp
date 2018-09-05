@@ -16,6 +16,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class CarController {
 	private static final Logger logger = LoggerFactory.getLogger(CarController.class);
 	
+	@RequestMapping(method = RequestMethod.GET, value = "/")
+	@ResponseBody
+	public String hello() throws Exception {
+		
+		
+		return "hello world";
+		
+	}
+	
 	@RequestMapping(method = RequestMethod.GET, value = "/in")
 	@ResponseBody
 	public Map<String, String> test1() throws Exception {
