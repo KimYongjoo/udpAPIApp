@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ntels.udp.api</groupId>
-	<artifactId>udpAPIDemo</artifactId>
+	<artifactId>udp-api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>udpAPIDemo</name>
+	<name>udp-api-gateway</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -42,6 +42,32 @@
          <artifactId>spring-boot-starter-tomcat</artifactId>
          <scope>provided</scope>
        </dependency>
+       
+    	<dependency>
+		    <groupId>com.googlecode.json-simple</groupId>
+		    <artifactId>json-simple</artifactId>
+		    <version>1.1</version><!--$NO-MVN-MAN-VER$-->
+		</dependency>
+       
+       <dependency>
+		    <groupId>com.microsoft.azure</groupId>
+		    <artifactId>azure-storage-spring-boot-starter</artifactId>
+		    <version>2.0.2</version>
+	   </dependency>  
+	   
+       <dependency>
+		   <groupId>com.microsoft.sqlserver</groupId>
+		   <artifactId>sqljdbc42</artifactId>
+		   <version>4.2</version>
+  	   </dependency>
+  	   
+  	   <!-- https://mvnrepository.com/artifact/com.microsoft.azure.sdk.iot/iot-service-client -->
+		<dependency>
+		    <groupId>com.microsoft.azure.sdk.iot</groupId>
+		    <artifactId>iot-service-client</artifactId>
+		    <version>1.7.23</version>
+		</dependency>
+  	   
 	</dependencies>
 
 	<build>
