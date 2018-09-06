@@ -44,5 +44,12 @@ public class ThingPlugController {
 
         return resultObj;
     }
+    
+    @RequestMapping(method = RequestMethod.GET, value = "/test")
+    @ResponseBody
+    public String testHello() throws Exception {    	
+
+    	return "hello world";
+    }
 
 }
